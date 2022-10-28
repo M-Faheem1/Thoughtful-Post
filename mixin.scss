@@ -1,0 +1,12 @@
+@mixin border($color,$width ) {
+    border: $color solid $width;
+}
+
+@mixin a-tag{
+    display:inline-block;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #E6E6E5;
+}
