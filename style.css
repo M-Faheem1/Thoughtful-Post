@@ -41,6 +41,9 @@ body {
   color: #E6E6E5;
   color: #010101;
 }
+.navbar ul a:hover {
+  color: #62B1C3;
+}
 .navbar i {
   display: none;
 }
@@ -433,6 +436,7 @@ body {
   max-width: 280px;
   background-color: rgba(26, 26, 26, 0.12);
   border-radius: 30px;
+  cursor: pointer;
 }
 .affiliate-programs .card-listing .card:not(:last-child) {
   margin-right: 30px;
@@ -558,6 +562,7 @@ body {
 }
 .happy-day .svgs {
   margin: 50px 0 50px;
+  cursor: pointer;
 }
 .happy-day .svgs svg :not(:last-child) {
   margin-right: 50px;
@@ -623,7 +628,10 @@ footer .social-media-icons {
   align-items: center;
   margin-top: 12px;
 }
-footer .social-media-icons svg:not(:last-child) {
+footer .social-media-icons svg {
+  cursor: pointer;
+}
+footer .social-media-icons svg :not(:last-child) {
   margin-right: 30px;
 }
 footer .terms {
@@ -633,6 +641,9 @@ footer .terms {
 }
 footer .terms a {
   color: #62B1C3;
+}
+footer .footer-logo svg {
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   footer span {

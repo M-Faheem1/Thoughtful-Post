@@ -34,6 +34,9 @@ body {
   a {
     @include a-tag;
     color:#010101;
+    &:hover {
+      color: $primary;
+    }
   }
   }
   i {
@@ -425,6 +428,7 @@ body {
       max-width: 280px;    
       background-color: rgb(26, 26, 26,.12); 
       border-radius: 30px;
+      cursor: pointer;
       &:not(:last-child) {
         margin-right: 30px;
       }
@@ -543,6 +547,7 @@ body {
   }
   .svgs {
     margin: 50px 0 50px;
+    cursor: pointer;
     svg :not(:last-child){
     margin-right: 50px;
       }
@@ -607,8 +612,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
-    svg:not(:last-child) {
-      margin-right: 30px;
+    svg
+    {cursor: pointer;
+      :not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
   .terms {
@@ -618,6 +626,9 @@ footer {
     a {
       color: $primary;
     }
+  }
+  .footer-logo  svg {
+    cursor: pointer;
   }
   @media screen and (max-width:767px){
     span{
